@@ -3,39 +3,79 @@
 <head>
 	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
 	<title>Crystal Game</title>
-	<link rel="stylesheet" type="text/css" href="assets/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
 
-	<div id="crystals">
-
-	<img class="crystal-image" src="http://vignette2.wikia.nocookie.net/mikennemonic/images/4/4e/Blue-sign-crystal.jpg/revision/latest?cb=20130823222025">
-	<img class="crystal-image" src="http://www.crystalclearintentions.co.nz/wp-content/uploads/crystals.jpg">
-	<img class="crystal-image" src="https://s1.thcdn.com/productimg/0/600/600/79/10619479-1340982452-230158.jpg">
-	<img class="crystal-image" src="http://www.thamesandkosmos.com/images/stories/virtuemart/product/ProductPage_0001_656072_growcrystalpink_model.jpg">
-
-	</div>
-	<!-- <header>
-		
-	</header>
+	<head>
+		<h1>CRYSTALS COLLECTOR</h1>
+	</head>
 
 	<div class="container">
 
 		<div class="row">
-			
+
+			<div id="instructions">
+				
+				<ul>
+
+					<li>You will be given a random number at the start of the game.</li>
+					<li>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</li>
+					<li>You win the game by matching your total score to random number. You lose the game if your total score goes above the random number.</li>
+					<li>The value of each crystal is hidden from you until click on it.</li>
+					<li>Each time when the game starts, the game will change the values of each crystal.</li>
+				
+				</ul>
+
+			</div>
+
 		</div>
-		
-	</div> -->
+
+		<div class="row">
+			
+			<div>
+				<h2>Number to Guess: <span id="guess-number"></span></h2>
+			</div>
+
+			<div>
+				<h2>Your total score is: <span id="your-score"></span></h2>
+			</div>
+
+		</div>
+
+		<div class="row">
+
+			<div id="crystals">
+
+				<img class="crystal-image" id="blue" src="http://vignette2.wikia.nocookie.net/mikennemonic/images/4/4e/Blue-sign-crystal.jpg/revision/latest?cb=20130823222025">
+				<img class="crystal-image" id="purple" src="http://www.crystalclearintentions.co.nz/wp-content/uploads/crystals.jpg">
+				<img class="crystal-image"  id="green" src="https://s1.thcdn.com/productimg/0/600/600/79/10619479-1340982452-230158.jpg">
+				<img class="crystal-image" id="pink" src="http://www.thamesandkosmos.com/images/stories/virtuemart/product/ProductPage_0001_656072_growcrystalpink_model.jpg">
+
+				<h4>pick a crystal to start playing</h4>
+
+			</div>
+
+		</div>
+
+		<div class="row">
+			
+			<div id="stats">
+				<h2>Wins: <span id="wins"></span></h2>
+				<h2>Losses: <span id="losses"></span></h2> 
+			</div>
+
+		</div>
+	
+	</div>
 
 <!-- Link to the external jQuery library -->
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 
 <!-- Link to my JS relative file path -->
-<script type="text/javascript" href="assets/javascript/game.js"></script>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
 
 </body>
 </html>
